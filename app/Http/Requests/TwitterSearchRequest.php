@@ -43,6 +43,6 @@ class TwitterSearchRequest extends FormRequest
     {
         $data = parent::all();
         
-        return array_merge(['result_type' => 'mixed',], $data);
+        return array_merge(['result_type' => 'mixed','q' => '#metaverse'], $data);
     }
 }

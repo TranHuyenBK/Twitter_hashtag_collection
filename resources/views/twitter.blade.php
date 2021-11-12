@@ -26,8 +26,8 @@
             <a href="{{ url()->previous() }}">back</a>
         @endif
 
-        @if($posts->search_metadata->next_results)
-            <a href="{{ $posts->search_metadata->next_results }}">next</a>
+        @if(isset($posts->search_metadata->next_results))
+            <a href="{{  $posts->search_metadata->next_results }}">next</a>
         @endif
 
     </section>
