@@ -6,3 +6,11 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.posts {
+    &__item {
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin: 5px;
+    }
+}

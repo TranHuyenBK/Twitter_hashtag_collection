@@ -13,8 +13,4 @@ use App\Http\Controllers\TwitterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('index', 'App\Http\Controllers\TwitterController@index');
+Route::get('', [TwitterController::class, 'index']);
